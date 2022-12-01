@@ -3,6 +3,7 @@ package JAVA;
 import java.util.Scanner;
 
 public class pattern2 {
+    private static int k;
     /**
      * @param args
      */
