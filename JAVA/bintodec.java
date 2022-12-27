@@ -2,6 +2,9 @@ package JAVA;
 import java.util.Scanner;
 import java.lang.Math;
 public class bintodec {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();

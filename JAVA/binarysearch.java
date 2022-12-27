@@ -3,6 +3,11 @@ import java.util.Scanner;
 
 public class binarysearch {
 
+    /**
+     * @param arr
+     * @param x
+     * @return
+     */
     public static int solution(int arr[],int x) {
         int s=0;
         int e=arr.length-1;

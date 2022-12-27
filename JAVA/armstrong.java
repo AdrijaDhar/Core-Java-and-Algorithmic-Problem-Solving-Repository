@@ -5,6 +5,9 @@ import java.lang.Math;
 public class armstrong {
     
 
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();

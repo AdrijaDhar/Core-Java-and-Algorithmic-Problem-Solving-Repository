@@ -3,6 +3,9 @@ package JAVA;
 import java.util.Scanner;
 
 public class bubblesort {
+    /**
+     * @param arr
+     */
     public static void sort(int[] arr) {
 
         for (int i = 0; i < arr.length ; i++) {

@@ -1,6 +1,9 @@
 package JAVA;
 import java.util.Scanner;
 public class arrangenum {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner sp=new Scanner(System.in);
         int n=sp.nextInt();

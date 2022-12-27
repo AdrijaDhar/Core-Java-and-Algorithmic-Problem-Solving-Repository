@@ -1,6 +1,9 @@
 package JAVA;
 import java.util.Scanner;
 public class allprime {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();

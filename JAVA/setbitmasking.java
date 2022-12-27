@@ -9,7 +9,7 @@ public class setbitmasking {
         int n=s.nextInt();
         int pos=s.nextInt();
         int bitmask=1<<pos;
-        System.out.println((c));
+        System.out.println((bitmask));
     }
 }
 /*

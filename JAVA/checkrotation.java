@@ -1,6 +1,10 @@
 package JAVA;
 
 public class checkrotation {
+    /**
+     * @param arr
+     * @return
+     */
     public static int arrayRotateCheck(int[] arr){
     	//Your code goes here
      /*    int min = arr[0], min_index = 0,n=arr.length;
