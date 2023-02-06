@@ -14,7 +14,7 @@ public class spiral {
     static void spiralPrint(int m, int n, int a[][]) {
         int i, k = 0, l = 0;
         int m=matrix.length;
-        int m=matrix[0].length;
+        int n=matrix[0].length;
         /*
          * k - starting row index
          * m - ending row index

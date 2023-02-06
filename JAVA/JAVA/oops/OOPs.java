@@ -5,7 +5,7 @@ class Pen {
     String brand;
     String type;
     private int number;
-    final int cost;
+  
 
     public void Print() {
         System.out.println(this.color + " " + this.brand + " " + this.type + " " + this.number);
@@ -35,18 +35,7 @@ class Pen {
      * }
      */
     // copy constructors
-    Pen(Pen p2) {
-        this.color = p2.color;
-        this.brand = p2.brand;
-        this.type = p2.type;
-        this.number = p2.number;
-
-    }
-
-    Pen() {
-
-    }
-
+    
 }
 
 public class OOPs {
@@ -71,9 +60,7 @@ public class OOPs {
 
         // p1.number=10;//we cant use private modified variable outside class as its not
         // accesible
-        Pen p2 = new Pen(p1);
-        System.out.println(p2);
-        p2.Print();
+      
         p1.returnNumber();
 
     }

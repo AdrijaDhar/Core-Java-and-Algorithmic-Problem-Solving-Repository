@@ -1,4 +1,4 @@
-package JAVA;
+package JAVA.oops;
 import java.util.Scanner;
 public class allprime {
     /**
