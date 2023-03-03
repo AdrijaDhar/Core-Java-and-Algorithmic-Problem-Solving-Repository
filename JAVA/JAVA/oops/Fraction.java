@@ -27,7 +27,7 @@ public class Fraction {
 class FractionUse {
     public static FractionUse add(FractionUse f1, FractionUse f2) {
         int newnum = f1.numerator * f2.denominator + f1.denominator * f2.numerator;
-        int newDeno = f1.denominator + f2.denominator;
+        int newDeno = f1.denominator *f2.denominator;
         FractionUse f3 = new FractionUse(newnum, newDeno);
         return f3;
     }
