@@ -1,7 +1,7 @@
 package JAVA.DataStructures;
 
 public class CircularQueue {
-    static class Queue {
+    public static class Queue {
         static int front = -1;
         static int rear = -1;
         static int size;

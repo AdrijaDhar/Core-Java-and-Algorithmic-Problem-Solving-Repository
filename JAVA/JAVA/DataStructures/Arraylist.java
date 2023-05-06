@@ -17,6 +17,11 @@ public class Arraylist {
        System.out.println(list);
        list.remove(5);
        System.out.println(list);
+       Integer h=3;
+       list.remove(h);
+       System.out.println(list);
+       list.add(3,90);
+       System.out.println(list);
        int size=list.size();
        System.out.println(size);
        for(int i=0;i<list.size();i++){
