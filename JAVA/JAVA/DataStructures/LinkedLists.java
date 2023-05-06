@@ -93,6 +93,7 @@ public class LinkedLists {
         secondLast.next_pointer = null;
 
     }
+    public static 
 
     public int GetSize() {
         return size;
