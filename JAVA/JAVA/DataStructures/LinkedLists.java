@@ -1,7 +1,7 @@
 package JAVA.DataStructures;
 import java.util.Scanner;
 public class LinkedLists {
-    Node head;
+    static Node head;
     private int size;
 
     LinkedLists() {
@@ -122,22 +122,7 @@ public class LinkedLists {
         }
     }
 
-    public void reverseIterate() {
-        if (head == null || head.next_pointer == null) {
-            return;
-        }
-        Node prevNode = head;
-        Node currNode = head.next_pointer;
-        while (currNode != null) {
-            Node nextNode = currNode.next_pointer;
-            currNode = prevNode;
-            prevNode = currNode;
-            currNode = nextNode;
-
-        }
-        head.next_pointer = null;
-        head = prevNode;
-    }
+   
 
     public void reverse() {
         Node current = head;
@@ -149,6 +134,31 @@ public class LinkedLists {
             current = nextNode;
         }
         head = prev;
+    }
+    public static void reverseIterate(){
+        if(head==null || head.next_pointer==null){
+            return;
+        }
+        Node prevNode=head;
+        Node currNode=head.next_pointer;
+        while(currNode!=null){
+            Node nextNode=currNode.next_pointer;
+            currNode.next_pointer=prevNode;
+            prevNode=currNode;
+            currNode=nextNode;
+        }
+        head.next_pointer=null;
+        head=prevNode;
+    }
+    public static Node reverseRecursive(Node head){
+        if(head==null || head.next_pointer==null){
+            return head;
+        }
+        Node newHead=reverseRecursive(head.next_pointer);
+        head.next_pointer.next_pointer=head;
+        head.next_pointer=null;
+        return newHead;
+
     }
     public  Node deleteNodeatpos(Node head, int pos) {
 		// Write your code here.
@@ -194,7 +204,10 @@ public class LinkedLists {
         list.printList();
         list.reverse();
         list.printList();
-        
+        list.reverseIterate();
+        list.printList();
+        list.head=list.reverseRecursive(list.head);
+        list.printList();
         System.out.println("enter total count of elements -> ");
         int num = s.nextInt(); 
         
