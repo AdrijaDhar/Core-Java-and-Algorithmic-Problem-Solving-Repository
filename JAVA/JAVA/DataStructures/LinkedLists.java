@@ -31,6 +31,16 @@ public class LinkedLists {
         newnode.next_pointer = head;
         head = newnode;
     }
+    public void fun(Node start)
+    {
+      if(start == null)
+        return;
+      System.out.print( start.data); 
+    
+      if(start.next_pointer != null )
+        fun(start.next_pointer.next_pointer);
+      System.out.printf(start.data);
+    }
 
     public void addlLast(String data) {
         Node newnode = new Node(data);
@@ -289,6 +299,8 @@ public class LinkedLists {
         System.out.println(f);
         
         list.findMiddle(list.head);
+        list.fun(head);
+        list.printList();
 
     }
 }
